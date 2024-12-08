@@ -16,6 +16,19 @@ body {
     overflow-x: hidden;
     transition: background-color .5s;
     font-family: Archivo, NotoSansCJKkr;
-
 }
 
+/* 폰트 */
+
+@font-face {
+    font-family: "Archivo";
+    src: url("../css/font/Archivo-SemiBold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Archivo";
+    src: url("../css/font/Archivo-Bold.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}

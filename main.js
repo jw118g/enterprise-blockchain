@@ -255,10 +255,10 @@ service1
 },"<")
 .to('.sc-service .service-area1 .icon-card-img',{
     autoAlpha:0
-},'b-=0.5')
+},'b-=0.8')
 .to('.sc-service .service-area1 .icon-card-img-active',{
     autoAlpha:1
-},'b-=0.5')
+},'<+=0.5')
 
 
 
@@ -323,8 +323,8 @@ service3
 .to('.sc-service .service-area3 .card-item:not(:first-child)',{
     '--opacity' : 1,
 },'a')
-.to('.sc-service .service-area3 .card-item:not(:first-child) img',{
-    'filter' : 'blur(10px)',
+.set('.sc-service .service-area3 .card-item:not(:first-child) img',{
+    'filter' : 'blur(20px)',
 },'a')
 .to('.sc-service .service-area3 .card-item:nth-child(2)',{
     xPercent:-100,
@@ -341,7 +341,7 @@ service3
 .to('.sc-service .service-area3 p.title',{
     opacity:1,
 },'c')
-.to('.sc-service .service-area3 .card-text',{
+.set('.sc-service .service-area3 .card-text',{
     '--opacity':1,
 },'c')
 
@@ -384,19 +384,6 @@ $('.sc-prove').each(function(i, el) {
 
 
 
-
-// const proveNetworkTl = gsap.timeline({
-//     scrollTrigger:{
-//         trigger: ".sc-prove-network",
-//         start: "0 30%",
-//         end: "100% 100%",
-//         scrub: 0,
-//     },
-// });
-// proveNetworkTl.to(".sc-prove-network .sc-prove-before",{x:-250},"transform")
-// .to(".sc-prove-network .sc-prove-after",{x:250},"transform")
-// .to(".sc-prove-network .prove-item.item1",{x:-400},"transform")
-// .to(".sc-prove-network .prove-item.item3",{x:380},"transform")
 gsap.set(".sc-asset .down p span:nth-child(2) ",{
     autoAlpha:0
 })
